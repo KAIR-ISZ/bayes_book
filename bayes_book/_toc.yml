@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: Bayesian data analytics
+  numbered: true
+  chapters:
+  - file: markdown/chapter_6.md
+- caption: Notebooks
+  numbered: false
+  chapters: 
+  - file: notebooks/chapter_6.ipynb  

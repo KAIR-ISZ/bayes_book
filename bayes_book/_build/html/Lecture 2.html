@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data analytics &#8212; My sample book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data analytics" href="Lecture%203.html" />
+    <link rel="prev" title="Data analytics" href="Lecture%201.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Przeszukaj tę książkę ..." aria-label="Przeszukaj tę książkę ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lecture%201.html">
+   Data analytics
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Data analytics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Lecture%203.html">
+   Data analytics
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Przełącz nawigację" aria-controls="site-navigation"
+                title="Przełącz nawigację" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Pobierz tę stronę"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Lecture 2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Pobierz plik źródłowy" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Drukuj do PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repozytorium źródłowe"><i
+                    class="fab fa-github"></i>magazyn</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FLecture 2.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Otwórz problem"><i class="fas fa-lightbulb"></i>otwarty problem</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Pełny ekran"
+        title="Pełny ekran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Lecture 2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Uruchomić Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Zawartość
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bayesian-basics">
+   Bayesian basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dr-hab-inz-jerzy-baranowski-prof-agh">
+     dr hab. inż. Jerzy Baranowski, Prof. AGH
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bayes-rule">
+   Bayes’ rule
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#predictions">
+   Predictions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prior-predictive-distribution">
+     Prior predictive distribution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Predictions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#posterior-predictive-distribution">
+     Posterior predictive distribution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-notation-and-properties">
+   Additional notation and properties
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#everything-is-conditional">
+     Everything is conditional
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expectation">
+     Expectation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variance">
+     Variance
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conditional-expectations-and-variances">
+   Conditional expectations and variances
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expectation-of-conditional-distribution">
+     Expectation of conditional distribution
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variance-of-conditional-distribution">
+     Variance of conditional distribution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changing-variables">
+   Changing variables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#discrete-distributions">
+     Discrete distributions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#continuous-distributions">
+   Continuous distributions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#typical-variable-changes">
+   Typical variable changes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#single-parameter-models">
+   Single parameter models
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#building-blocks-of-more-complicated-models">
+     Building blocks of more complicated models
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#answers-to-basic-questions-e-g">
+     Answers to basic questions e.g.:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#binomial-model">
+   Binomial model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-of-bayesian-learning">
+   Example of Bayesian learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#globe-tossing-likelyhood">
+   Globe tossing likelyhood
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-does-it-look-analytically">
+   How does it look analytically?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-summarize-posterior">
+   How to summarize posterior?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interval-summaries">
+   Interval summaries
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#priors">
+   Priors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#informative-priors">
+   Informative priors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#posterior-with-informative-prior">
+   Posterior with informative prior
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conjugacy">
+   Conjugacy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-biology">
+   Example - biology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uniform-prior">
+   Uniform prior
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualisation">
+     Visualisation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conjugate-priors">
+   Conjugate priors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#non-conjugate-prior">
+   Non-conjugate prior
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data analytics</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Zawartość </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bayesian-basics">
+   Bayesian basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dr-hab-inz-jerzy-baranowski-prof-agh">
+     dr hab. inż. Jerzy Baranowski, Prof. AGH
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bayes-rule">
+   Bayes’ rule
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#predictions">
+   Predictions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prior-predictive-distribution">
+     Prior predictive distribution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Predictions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#posterior-predictive-distribution">
+     Posterior predictive distribution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-notation-and-properties">
+   Additional notation and properties
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#everything-is-conditional">
+     Everything is conditional
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expectation">
+     Expectation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variance">
+     Variance
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conditional-expectations-and-variances">
+   Conditional expectations and variances
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expectation-of-conditional-distribution">
+     Expectation of conditional distribution
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variance-of-conditional-distribution">
+     Variance of conditional distribution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changing-variables">
+   Changing variables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#discrete-distributions">
+     Discrete distributions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#continuous-distributions">
+   Continuous distributions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#typical-variable-changes">
+   Typical variable changes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#single-parameter-models">
+   Single parameter models
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#building-blocks-of-more-complicated-models">
+     Building blocks of more complicated models
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#answers-to-basic-questions-e-g">
+     Answers to basic questions e.g.:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#binomial-model">
+   Binomial model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-of-bayesian-learning">
+   Example of Bayesian learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#globe-tossing-likelyhood">
+   Globe tossing likelyhood
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-does-it-look-analytically">
+   How does it look analytically?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-summarize-posterior">
+   How to summarize posterior?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interval-summaries">
+   Interval summaries
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#priors">
+   Priors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#informative-priors">
+   Informative priors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#posterior-with-informative-prior">
+   Posterior with informative prior
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conjugacy">
+   Conjugacy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-biology">
+   Example - biology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uniform-prior">
+   Uniform prior
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualisation">
+     Visualisation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conjugate-priors">
+   Conjugate priors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#non-conjugate-prior">
+   Non-conjugate prior
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-analytics">
+<h1>Data analytics<a class="headerlink" href="#data-analytics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bayesian-basics">
+<h2>Bayesian basics<a class="headerlink" href="#bayesian-basics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dr-hab-inz-jerzy-baranowski-prof-agh">
+<h3>dr hab. inż. Jerzy Baranowski, Prof. AGH<a class="headerlink" href="#dr-hab-inz-jerzy-baranowski-prof-agh" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="bayes-rule">
+<h2>Bayes’ rule<a class="headerlink" href="#bayes-rule" title="Permalink to this headline">¶</a></h2>
+<p>In most applicatations we focus on the numerator</p>
+<div class="math notranslate nohighlight">
+\[ \underbrace{p(\theta|y)}_{\mathrm{posterior}}\propto 
+\underbrace{p(\theta)}_{\mathrm{prior}}
+\underbrace{p(y|\theta)}_{\mathrm{likelihood}}
+\]</div>
+</div>
+<div class="section" id="predictions">
+<h2>Predictions<a class="headerlink" href="#predictions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="prior-predictive-distribution">
+<h3>Prior predictive distribution<a class="headerlink" href="#prior-predictive-distribution" title="Permalink to this headline">¶</a></h3>
+<p>What values of data can we expect before actual measurements (based on prior knowledge)</p>
+<div class="math notranslate nohighlight">
+\[
+p(y)=\int p(y,\theta) d\theta=\int p(\theta)p(y|\theta)d\theta
+\]</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Predictions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="posterior-predictive-distribution">
+<h3>Posterior predictive distribution<a class="headerlink" href="#posterior-predictive-distribution" title="Permalink to this headline">¶</a></h3>
+<p>What values of new data can we expect based on previous measurements and prior knowledge</p>
+<div class="math notranslate nohighlight">
+\[
+p(\tilde{y}|y)=\int p(\tilde{y},\theta|y) d\theta=
+\int p(\tilde{y}|\theta,y) p(\theta|y)d\theta=
+\int p(\tilde{y}|\theta) p(\theta|y)d\theta
+\]</div>
+</div>
+</div>
+<div class="section" id="additional-notation-and-properties">
+<h2>Additional notation and properties<a class="headerlink" href="#additional-notation-and-properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="everything-is-conditional">
+<h3>Everything is conditional<a class="headerlink" href="#everything-is-conditional" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[p(\theta,y|H)=p(\theta|H)p(y|\theta,H)\]</div>
+</div>
+<div class="section" id="expectation">
+<h3>Expectation<a class="headerlink" href="#expectation" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[ \mathrm{E}(u)=\int up(u) d u \]</div>
+</div>
+<div class="section" id="variance">
+<h3>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[ \mathrm{var}(u)=\int(u-\mathrm{E}(u))(u-\mathrm{E}(u))^T p(u) du\]</div>
+</div>
+</div>
+<div class="section" id="conditional-expectations-and-variances">
+<h2>Conditional expectations and variances<a class="headerlink" href="#conditional-expectations-and-variances" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="expectation-of-conditional-distribution">
+<h3>Expectation of conditional distribution<a class="headerlink" href="#expectation-of-conditional-distribution" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[ \mathrm{E}(u)=\mathrm{E}(\mathrm{E}(u|v)) \]</div>
+<div class="math notranslate nohighlight">
+\[ \mathrm{E}(u)=\iint u p(u,v) du dv =\iint u p(u|v) du p(v) dv=\int  \mathrm{E}(u|v)p(v)d v \]</div>
+</div>
+<div class="section" id="variance-of-conditional-distribution">
+<h3>Variance of conditional distribution<a class="headerlink" href="#variance-of-conditional-distribution" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[ \mathrm{var}(u)=\mathrm{E}(\mathrm{var}(u|v))+\mathrm{var}(\mathrm{E}(u|v) \]</div>
+</div>
+</div>
+<div class="section" id="changing-variables">
+<h2>Changing variables<a class="headerlink" href="#changing-variables" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[ v=f(u) \]</div>
+<div class="section" id="discrete-distributions">
+<h3>Discrete distributions<a class="headerlink" href="#discrete-distributions" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[
+p_v(v)=p_u(f^{-1}(v))
+\]</div>
+</div>
+</div>
+<div class="section" id="continuous-distributions">
+<h2>Continuous distributions<a class="headerlink" href="#continuous-distributions" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[
+p_v(v)=|J|p_u(f^{-1}(v))
+\]</div>
+</div>
+<div class="section" id="typical-variable-changes">
+<h2>Typical variable changes<a class="headerlink" href="#typical-variable-changes" title="Permalink to this headline">¶</a></h2>
+<p>It is useful to work on the unbounded interval i.e. <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>. Often parameters are bounded, so we use transformations</p>
+<ul class="simple">
+<li><p>Logarithmic (from <span class="math notranslate nohighlight">\((0,\infty)\rightarrow (-\infty,\infty)\)</span>)
+$<span class="math notranslate nohighlight">\( v=\log(u)\)</span>$</p></li>
+<li><p>Logistic (from <span class="math notranslate nohighlight">\((0,1)\rightarrow (-\infty,\infty)\)</span>)
+$<span class="math notranslate nohighlight">\( v=\mathrm{logit}(u) \)</span><span class="math notranslate nohighlight">\(
+where 
+\)</span><span class="math notranslate nohighlight">\( \mathrm{logit}(x)=\log\left(\frac{x}{1-x}\right),\quad
+\mathrm{logit}^{-1}(y)=\frac{\exp(y)}{1+\exp(y)}\)</span>$</p></li>
+<li><p>Probit (from <span class="math notranslate nohighlight">\((0,1)\rightarrow (-\infty,\infty)\)</span>)
+$<span class="math notranslate nohighlight">\( v=\Phi^{-1}(u) \)</span><span class="math notranslate nohighlight">\(
+where \)</span>\phi$ is the standard normal cumulative distribution function</p></li>
+</ul>
+</div>
+<div class="section" id="single-parameter-models">
+<h2>Single parameter models<a class="headerlink" href="#single-parameter-models" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="building-blocks-of-more-complicated-models">
+<h3>Building blocks of more complicated models<a class="headerlink" href="#building-blocks-of-more-complicated-models" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="answers-to-basic-questions-e-g">
+<h3>Answers to basic questions e.g.:<a class="headerlink" href="#answers-to-basic-questions-e-g" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>What is the average difference between treatment groups?</p></li>
+<li><p>How strong is the association between a treatment and an outcome?</p></li>
+<li><p>Does the effect of the treatment depend upon a covariate?</p></li>
+<li><p>How much variation is there among groups?</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="binomial-model">
+<h2>Binomial model<a class="headerlink" href="#binomial-model" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Natural model for data that arise from a sequence of <span class="math notranslate nohighlight">\(n\)</span> exchangeable trials</p></li>
+<li><p>Two possible outcomes, conventionally labeled ‘success’ and ‘failure.’
+$<span class="math notranslate nohighlight">\(
+p(y|\theta)=\mathrm{Bin}(y|n,\theta)={n \choose y}\theta^y (1-\theta)^{n-y}
+\)</span>$</p></li>
+</ul>
+</div>
+<div class="section" id="example-of-bayesian-learning">
+<h2>Example of Bayesian learning<a class="headerlink" href="#example-of-bayesian-learning" title="Permalink to this headline">¶</a></h2>
+<p>Globe tossing:</p>
+<ul class="simple">
+<li><p>The true proportion of water covering the globe is p.</p></li>
+<li><p>A single toss of the globe has a probability <span class="math notranslate nohighlight">\(p\)</span> of producing a water (W) observation.</p></li>
+<li><p>It has a probability <span class="math notranslate nohighlight">\(1 − p\)</span> of producing a land (L) observation.</p></li>
+<li><p>Each toss of the globe is independent of the others.</p></li>
+</ul>
+</div>
+<div class="section" id="globe-tossing-likelyhood">
+<h2>Globe tossing likelyhood<a class="headerlink" href="#globe-tossing-likelyhood" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="c1">#import seaborn as sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">theta</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+<span class="c1">#sns.set(style=&#39;darkgrid&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="mi">7</span>
+<span class="n">n</span><span class="o">=</span><span class="mi">11</span>
+<span class="n">likelihood</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">binom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">theta</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">likelihood</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Lecture 2_13_0.png" src="_images/Lecture 2_13_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="how-does-it-look-analytically">
+<h2>How does it look analytically?<a class="headerlink" href="#how-does-it-look-analytically" title="Permalink to this headline">¶</a></h2>
+<p>Posterior distribution with uniform prior takes form
+$<span class="math notranslate nohighlight">\( p(\theta|y)\propto \theta^y (1-\theta)^{n-y}\)</span><span class="math notranslate nohighlight">\(
+Which has form of Beta distribution
+\)</span><span class="math notranslate nohighlight">\( \theta|y\sim \mathrm{Beta} (y+1,n-y+1)\)</span>$</p>
+</div>
+<div class="section" id="how-to-summarize-posterior">
+<h2>How to summarize posterior?<a class="headerlink" href="#how-to-summarize-posterior" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Ideally – by itself</p></li>
+<li><p>Usually – mean, median, mode</p></li>
+<li><p>Variation – standard deviation, the interquartile range, and other quantiles</p></li>
+</ul>
+</div>
+<div class="section" id="interval-summaries">
+<h2>Interval summaries<a class="headerlink" href="#interval-summaries" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Central interval - a symmetric interval around for example a mean</p></li>
+<li><p>Highest posterior density region - smallest interval containing the desired probability</p></li>
+</ul>
+<img src="img/intervals.png" width="500">
+</div>
+<div class="section" id="priors">
+<h2>Priors<a class="headerlink" href="#priors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>population interpretation</strong>, the prior distribution represents a population of possible parameter values, from which the <span class="math notranslate nohighlight">\(\theta\)</span> of current interest has been drawn</p></li>
+<li><p><strong>state of knowledge interpretation</strong>, we must express our knowledge (and uncertainty) about <span class="math notranslate nohighlight">\(\theta\)</span> as if its value could be thought of as a random realization from the prior distribution</p></li>
+</ul>
+</div>
+<div class="section" id="informative-priors">
+<h2>Informative priors<a class="headerlink" href="#informative-priors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>They try to introduce new information</p></li>
+<li><p>Often interpreted as knowledge from previous experiments</p></li>
+<li><p>For binomial example
+$<span class="math notranslate nohighlight">\( p(\theta)\propto \theta^{\alpha-1}(1-\theta)^{\beta-1}\)</span><span class="math notranslate nohighlight">\(
+It’s a Beta distribution \)</span>\theta \sim \mathrm{Beta}(\alpha, \beta)<span class="math notranslate nohighlight">\(, prior density is equivalent to \)</span>\alpha − 1<span class="math notranslate nohighlight">\( prior successes and \)</span>\beta − 1$ prior failures.</p></li>
+</ul>
+</div>
+<div class="section" id="posterior-with-informative-prior">
+<h2>Posterior with informative prior<a class="headerlink" href="#posterior-with-informative-prior" title="Permalink to this headline">¶</a></h2>
+<p>Posterior has a closed form
+$<span class="math notranslate nohighlight">\(
+\begin{aligned}
+p(\theta|y)\propto{}&amp; \theta^{y}(1-\theta)^{n-y}\theta^{\alpha-1}(1-\theta)^{\beta-1}=\\
+={}&amp;\theta^{y+\alpha-1}(1-\theta)^{n-y+\beta-1}=\\
+={}&amp;\mathrm{Beta}(\alpha+y,\beta+n-y)
+\end{aligned}
+\)</span><span class="math notranslate nohighlight">\(
+With expectation
+\)</span><span class="math notranslate nohighlight">\(
+\mathrm{E}(\theta|y)=\frac{\alpha+y}{\alpha+\beta+n}
+\)</span><span class="math notranslate nohighlight">\(
+which always lies between the sample proportion, \)</span>y/n<span class="math notranslate nohighlight">\(, and the prior mean, \)</span>\alpha/(\alpha + \beta)$</p>
+</div>
+<div class="section" id="conjugacy">
+<h2>Conjugacy<a class="headerlink" href="#conjugacy" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[ p(\theta|y)\in\mathcal{P}\mathrm{for\ all}\ p(\cdot|\theta)\in\mathcal{F}\ \mathrm{and}\ p(\cdot)\in\mathcal{P}
+\]</div>
+<p>Class <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> is conjugate to class <span class="math notranslate nohighlight">\(\mathcal{F}\)</span></p>
+<ul class="simple">
+<li><p>Conjugacy makes everything easier, formulas are analytic so computation is faster</p></li>
+<li><p>It should not be a goal by itself, as sometimes different distributions are much more justified</p></li>
+</ul>
+</div>
+<div class="section" id="example-biology">
+<h2>Example - biology<a class="headerlink" href="#example-biology" title="Permalink to this headline">¶</a></h2>
+<p>Is proportion of girls born with placenta previa lower than the proportion of female births in general population i.e. 0.485?</p>
+<p>Study results: of 980 births with PP 437 were female.
+<img src="img/placenta.png" width="400"></p>
+</div>
+<div class="section" id="uniform-prior">
+<h2>Uniform prior<a class="headerlink" href="#uniform-prior" title="Permalink to this headline">¶</a></h2>
+<p>Assuming uniform prior the analytic computation gives us posterior Beta(438,544). We can compute values analytically but its easier via sampling</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">arviz</span> <span class="k">as</span> <span class="nn">az</span>
+<span class="n">samples</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">beta</span><span class="p">(</span><span class="mi">438</span><span class="p">,</span><span class="mi">544</span><span class="p">,</span><span class="mi">10000</span><span class="p">)</span>
+<span class="n">interval</span><span class="o">=</span><span class="n">az</span><span class="o">.</span><span class="n">hdi</span><span class="p">(</span><span class="n">samples</span><span class="p">,</span><span class="mf">0.94</span><span class="p">)</span> 
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;94% HPD interval:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">interval</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Median:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">samples</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>94% HPD interval:[0.41688465 0.47647535]
+Median:0.4461052564859803
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="visualisation">
+<h3>Visualisation<a class="headerlink" href="#visualisation" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta1</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+<span class="n">theta2</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">interval</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">interval</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">200</span><span class="p">)</span>
+<span class="n">bd</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="p">,</span><span class="mi">544</span><span class="p">)</span>
+<span class="n">bd2</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta2</span><span class="p">,</span><span class="mi">438</span><span class="p">,</span><span class="mi">544</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">bd</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">theta2</span><span class="p">,</span> <span class="n">bd2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Lecture 2_25_0.png" src="_images/Lecture 2_25_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Lecture 2_26_0.png" src="_images/Lecture 2_26_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="conjugate-priors">
+<h2>Conjugate priors<a class="headerlink" href="#conjugate-priors" title="Permalink to this headline">¶</a></h2>
+<p>For binomial likelihood Beta is its conjugate. We can encode our knowledge (mean value of whole population) using the following relationships:</p>
+<ul class="simple">
+<li><p>mean of <span class="math notranslate nohighlight">\(\mathrm{Beta}(\alpha,\beta)\)</span> distribution is <span class="math notranslate nohighlight">\(\frac{\alpha}{\alpha+\beta}\)</span></p></li>
+<li><p>interpreting Beta, as previous binomial experiments then <span class="math notranslate nohighlight">\(\alpha+\beta\)</span> is the population size</p></li>
+<li><p>we can try to do computation using various population sizes keeping mean of <span class="math notranslate nohighlight">\(0.485\)</span></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sizes</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span>
+<span class="n">post_median</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">post_hpd</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">alphas</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">betas</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">sizes</span><span class="p">:</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.485</span><span class="o">*</span><span class="n">n</span>
+    <span class="n">beta</span><span class="o">=</span><span class="n">n</span><span class="o">-</span><span class="n">alpha</span>
+    <span class="n">alphas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span>
+    <span class="n">betas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span>
+    <span class="n">post_samples</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">beta</span><span class="p">(</span><span class="mi">438</span><span class="o">+</span><span class="n">alpha</span><span class="p">,</span><span class="mi">544</span><span class="o">+</span><span class="n">beta</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+    <span class="n">post_median</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">post_samples</span><span class="p">))</span>
+    <span class="n">post_hpd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">az</span><span class="o">.</span><span class="n">hdi</span><span class="p">(</span><span class="n">post_samples</span><span class="p">,</span><span class="mf">0.94</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Population size&#39;</span><span class="p">:</span><span class="n">sizes</span><span class="p">,</span>
+                 <span class="s1">&#39;Posterior median&#39;</span><span class="p">:</span><span class="n">post_median</span><span class="p">,</span>
+                 <span class="s1">&#39;Posterior 94</span><span class="si">% c</span><span class="s1">redible interval&#39;</span><span class="p">:</span><span class="n">post_hpd</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Population size</th>
+      <th>Posterior median</th>
+      <th>Posterior 94% credible interval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>0.445856</td>
+      <td>[0.417484255691757, 0.47602979210304935]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>0.445527</td>
+      <td>[0.41811418664120764, 0.4778747099232391]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10</td>
+      <td>0.447407</td>
+      <td>[0.4186888381864138, 0.47691604699679235]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>20</td>
+      <td>0.446807</td>
+      <td>[0.4155422094988496, 0.47405246625526415]</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>100</td>
+      <td>0.450309</td>
+      <td>[0.4222400631569723, 0.4796459579519981]</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>200</td>
+      <td>0.452851</td>
+      <td>[0.4232550816547827, 0.4770771131716891]</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1000</td>
+      <td>0.465229</td>
+      <td>[0.44581209507534625, 0.4862551829261736]</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">,</span><span class="n">ax3</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span><span class="n">tight_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">alphas</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">betas</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="n">theta1</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="o">+</span><span class="n">alphas</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">544</span><span class="o">+</span><span class="n">betas</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="n">theta1</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="p">,</span><span class="mi">544</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Prior population size=&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">alphas</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">betas</span><span class="p">[</span><span class="mi">3</span><span class="p">]),</span><span class="n">theta1</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="o">+</span><span class="n">alphas</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="mi">544</span><span class="o">+</span><span class="n">betas</span><span class="p">[</span><span class="mi">3</span><span class="p">]),</span><span class="n">theta1</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="p">,</span><span class="mi">544</span><span class="p">))</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Prior population size=&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">alphas</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span><span class="n">betas</span><span class="p">[</span><span class="mi">5</span><span class="p">]),</span><span class="n">theta1</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="o">+</span><span class="n">alphas</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span><span class="mi">544</span><span class="o">+</span><span class="n">betas</span><span class="p">[</span><span class="mi">5</span><span class="p">]),</span><span class="n">theta1</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="p">,</span><span class="mi">544</span><span class="p">))</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Prior population size=&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">sizes</span><span class="p">[</span><span class="mi">6</span><span class="p">]))</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">f</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;Prior&#39;</span><span class="p">,</span><span class="s1">&#39;Posterior&#39;</span><span class="p">,</span><span class="s1">&#39;Posterior with uniform prior&#39;</span><span class="p">],</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Lecture 2_31_0.png" src="_images/Lecture 2_31_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Lecture 2_32_0.png" src="_images/Lecture 2_32_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="non-conjugate-prior">
+<h2>Non-conjugate prior<a class="headerlink" href="#non-conjugate-prior" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f2</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">,</span><span class="n">ax3</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span><span class="n">tight_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="p">,</span><span class="mi">544</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Likelihood&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mf">0.485</span><span class="p">,</span><span class="mf">0.05</span><span class="p">))</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Nonconjugate prior: N(0.485,0.05)&#39;</span><span class="p">)</span>
+<span class="n">post</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mi">438</span><span class="p">,</span><span class="mi">544</span><span class="p">)</span><span class="o">*</span><span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span><span class="mf">0.485</span><span class="p">,</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="n">post</span><span class="o">=</span><span class="n">post</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">post</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta1</span><span class="p">,</span> <span class="n">post</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Non-conjugate posterior&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Lecture 2_34_0.png" src="_images/Lecture 2_34_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Lecture%201.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Data analytics</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Lecture%203.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Data analytics</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Przez The Jupyter Book Community<br/>
+    
+        &copy; prawa autorskie 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

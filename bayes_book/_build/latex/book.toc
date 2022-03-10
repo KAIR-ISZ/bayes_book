@@ -1,0 +1,125 @@
+\selectlanguage *{english}
+\contentsline {chapter}{\numberline {1}Markdown Files}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}What is MyST?}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Sample Roles and Directivs}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Citations}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Learn more}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Data analytics}{4}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Intro to statistical modelling}{4}{subsection.1.5.1}%
+\contentsline {subsubsection}{dr hab. inż. Jerzy Baranowski, Prof. AGH}{4}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {1.5.2}Organizational aspects}{4}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Course code}{4}{subsection.1.5.3}%
+\contentsline {subsubsection}{EAIiIBAiRCSS.IIi1O.34b7b98ba1017eb4b851f46d7326974f.19}{4}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {1.5.4}Course outline}{4}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}Source material \sphinxhyphen {} BDA 3rd edition}{5}{subsection.1.5.5}%
+\contentsline {subsection}{\numberline {1.5.6}Source material \sphinxhyphen {} Statistical Rethinking 2nd edition}{5}{subsection.1.5.6}%
+\contentsline {subsection}{\numberline {1.5.7}Source material \sphinxhyphen {} case studies by Michael Betancourt}{5}{subsection.1.5.7}%
+\contentsline {subsection}{\numberline {1.5.8}Extra reading \sphinxhyphen {} Student’s guide to Bayesian statistics}{5}{subsection.1.5.8}%
+\contentsline {subsection}{\numberline {1.5.9}Extra reading \sphinxhyphen {} Bayesian analysis with Python}{5}{subsection.1.5.9}%
+\contentsline {subsection}{\numberline {1.5.10}Interesting people on Twitter}{5}{subsection.1.5.10}%
+\contentsline {subsection}{\numberline {1.5.11}What is the point?}{6}{subsection.1.5.11}%
+\contentsline {subsection}{\numberline {1.5.12}What is data science?}{6}{subsection.1.5.12}%
+\contentsline {subsection}{\numberline {1.5.13}SM vs ML}{6}{subsection.1.5.13}%
+\contentsline {subsection}{\numberline {1.5.14}SM}{6}{subsection.1.5.14}%
+\contentsline {subsection}{\numberline {1.5.15}ML}{6}{subsection.1.5.15}%
+\contentsline {subsection}{\numberline {1.5.16}Advantages of ML}{6}{subsection.1.5.16}%
+\contentsline {subsection}{\numberline {1.5.17}Advantages of SM}{7}{subsection.1.5.17}%
+\contentsline {subsection}{\numberline {1.5.18}Discussion points}{7}{subsection.1.5.18}%
+\contentsline {subsection}{\numberline {1.5.19}When to use SM?}{7}{subsection.1.5.19}%
+\contentsline {subsection}{\numberline {1.5.20}When to use ML?}{7}{subsection.1.5.20}%
+\contentsline {subsection}{\numberline {1.5.21}Bayesian Statistical Modelling}{8}{subsection.1.5.21}%
+\contentsline {subsection}{\numberline {1.5.22}Bayesian paradigm}{8}{subsection.1.5.22}%
+\contentsline {subsection}{\numberline {1.5.23}Bayesian methods work}{8}{subsection.1.5.23}%
+\contentsline {subsection}{\numberline {1.5.24}Main fields of Bayesian applications}{8}{subsection.1.5.24}%
+\contentsline {subsection}{\numberline {1.5.25}Main concepts of BDA}{8}{subsection.1.5.25}%
+\contentsline {subsection}{\numberline {1.5.26}Bayes’ rule derivation}{9}{subsection.1.5.26}%
+\contentsline {subsection}{\numberline {1.5.27}Bayes’ rule}{9}{subsection.1.5.27}%
+\contentsline {subsection}{\numberline {1.5.28}Example – spelling correction (BDA3)}{9}{subsection.1.5.28}%
+\contentsline {subsection}{\numberline {1.5.29}Example cont.}{10}{subsection.1.5.29}%
+\contentsline {subsubsection}{Prior distribution}{10}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {1.5.30}Example cont.}{10}{subsection.1.5.30}%
+\contentsline {subsubsection}{Likelyhood}{10}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {1.5.31}Example cont.}{10}{subsection.1.5.31}%
+\contentsline {section}{\numberline {1.6}Data analytics}{10}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Bayesian basics}{10}{subsection.1.6.1}%
+\contentsline {subsubsection}{dr hab. inż. Jerzy Baranowski, Prof. AGH}{10}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {1.6.2}Bayes’ rule}{10}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Predictions}{11}{subsection.1.6.3}%
+\contentsline {subsubsection}{Prior predictive distribution}{11}{subsubsection*.8}%
+\contentsline {subsection}{\numberline {1.6.4}Predictions}{11}{subsection.1.6.4}%
+\contentsline {subsubsection}{Posterior predictive distribution}{11}{subsubsection*.9}%
+\contentsline {subsection}{\numberline {1.6.5}Additional notation and properties}{11}{subsection.1.6.5}%
+\contentsline {subsubsection}{Everything is conditional}{11}{subsubsection*.10}%
+\contentsline {subsubsection}{Expectation}{11}{subsubsection*.11}%
+\contentsline {subsubsection}{Variance}{11}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {1.6.6}Conditional expectations and variances}{11}{subsection.1.6.6}%
+\contentsline {subsubsection}{Expectation of conditional distribution}{11}{subsubsection*.13}%
+\contentsline {subsubsection}{Variance of conditional distribution}{12}{subsubsection*.14}%
+\contentsline {subsection}{\numberline {1.6.7}Changing variables}{12}{subsection.1.6.7}%
+\contentsline {subsubsection}{Discrete distributions}{12}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {1.6.8}Continuous distributions}{12}{subsection.1.6.8}%
+\contentsline {subsection}{\numberline {1.6.9}Typical variable changes}{12}{subsection.1.6.9}%
+\contentsline {subsection}{\numberline {1.6.10}Single parameter models}{12}{subsection.1.6.10}%
+\contentsline {subsubsection}{Building blocks of more complicated models}{12}{subsubsection*.16}%
+\contentsline {subsubsection}{Answers to basic questions e.g.:}{12}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {1.6.11}Binomial model}{13}{subsection.1.6.11}%
+\contentsline {subsection}{\numberline {1.6.12}Example of Bayesian learning}{13}{subsection.1.6.12}%
+\contentsline {subsection}{\numberline {1.6.13}Globe tossing likelyhood}{13}{subsection.1.6.13}%
+\contentsline {subsection}{\numberline {1.6.14}How does it look analytically?}{14}{subsection.1.6.14}%
+\contentsline {subsection}{\numberline {1.6.15}How to summarize posterior?}{14}{subsection.1.6.15}%
+\contentsline {subsection}{\numberline {1.6.16}Interval summaries}{14}{subsection.1.6.16}%
+\contentsline {subsection}{\numberline {1.6.17}Priors}{15}{subsection.1.6.17}%
+\contentsline {subsection}{\numberline {1.6.18}Informative priors}{15}{subsection.1.6.18}%
+\contentsline {subsection}{\numberline {1.6.19}Posterior with informative prior}{15}{subsection.1.6.19}%
+\contentsline {subsection}{\numberline {1.6.20}Conjugacy}{15}{subsection.1.6.20}%
+\contentsline {subsection}{\numberline {1.6.21}Example \sphinxhyphen {} biology}{15}{subsection.1.6.21}%
+\contentsline {subsection}{\numberline {1.6.22}Uniform prior}{15}{subsection.1.6.22}%
+\contentsline {subsubsection}{Visualisation}{16}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {1.6.23}Conjugate priors}{17}{subsection.1.6.23}%
+\contentsline {subsection}{\numberline {1.6.24}Non\sphinxhyphen {}conjugate prior}{19}{subsection.1.6.24}%
+\contentsline {section}{\numberline {1.7}Data analytics}{20}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Exploring distributions}{20}{subsection.1.7.1}%
+\contentsline {subsubsection}{dr hab. inż. Jerzy Baranowski, Prof. AGH}{20}{subsubsection*.19}%
+\contentsline {subsection}{\numberline {1.7.2}Managing expectations}{21}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Expectations}{21}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}How to compute expectations?}{21}{subsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.7.5}How to compute expectations?}{21}{subsection.1.7.5}%
+\contentsline {subsection}{\numberline {1.7.6}Monte Carlo estimators}{21}{subsection.1.7.6}%
+\contentsline {subsection}{\numberline {1.7.7}Motivational example}{22}{subsection.1.7.7}%
+\contentsline {subsection}{\numberline {1.7.8}Grid approximation}{22}{subsection.1.7.8}%
+\contentsline {subsection}{\numberline {1.7.9}Grid approximation example}{22}{subsection.1.7.9}%
+\contentsline {subsection}{\numberline {1.7.10}Summarizing by sampling}{24}{subsection.1.7.10}%
+\contentsline {subsection}{\numberline {1.7.11}Sampling from grid posterior}{25}{subsection.1.7.11}%
+\contentsline {subsection}{\numberline {1.7.12}Weakly informative priors}{26}{subsection.1.7.12}%
+\contentsline {subsection}{\numberline {1.7.13}Prior predictive distribution}{28}{subsection.1.7.13}%
+\contentsline {subsection}{\numberline {1.7.14}Posterior predictive distribution}{28}{subsection.1.7.14}%
+\contentsline {subsection}{\numberline {1.7.15}Do grid approximations generalize?}{29}{subsection.1.7.15}%
+\contentsline {subsection}{\numberline {1.7.16}Sometimes geometry is difficult}{29}{subsection.1.7.16}%
+\contentsline {subsection}{\numberline {1.7.17}What contributes to expectation?}{29}{subsection.1.7.17}%
+\contentsline {subsection}{\numberline {1.7.18}But what about the volume?}{30}{subsection.1.7.18}%
+\contentsline {subsection}{\numberline {1.7.19}Volume rises exponentially with dimension}{30}{subsection.1.7.19}%
+\contentsline {subsection}{\numberline {1.7.20}It is the product that counts}{30}{subsection.1.7.20}%
+\contentsline {subsection}{\numberline {1.7.21}Typical set}{30}{subsection.1.7.21}%
+\contentsline {subsection}{\numberline {1.7.22}Concentration of measure}{30}{subsection.1.7.22}%
+\contentsline {subsection}{\numberline {1.7.23}Typical set is where we should sample from}{30}{subsection.1.7.23}%
+\contentsline {subsection}{\numberline {1.7.24}Computational algorithms for probabilistic computing}{30}{subsection.1.7.24}%
+\contentsline {subsection}{\numberline {1.7.25}Modal estimators}{30}{subsection.1.7.25}%
+\contentsline {subsection}{\numberline {1.7.26}Issues}{30}{subsection.1.7.26}%
+\contentsline {subsection}{\numberline {1.7.27}Laplace estimator}{31}{subsection.1.7.27}%
+\contentsline {subsection}{\numberline {1.7.28}If distribution is relatively close to Gaussian, typical set is well approximated}{31}{subsection.1.7.28}%
+\contentsline {subsection}{\numberline {1.7.29}Variational approximation}{31}{subsection.1.7.29}%
+\contentsline {subsection}{\numberline {1.7.30}Multimodality of variational approximation}{31}{subsection.1.7.30}%
+\contentsline {subsection}{\numberline {1.7.31}Over and under fitting of the typical set}{31}{subsection.1.7.31}%
+\contentsline {subsection}{\numberline {1.7.32}Monte Carlo sampling}{31}{subsection.1.7.32}%
+\contentsline {subsection}{\numberline {1.7.33}Issues with Monte Carlo}{31}{subsection.1.7.33}%
+\contentsline {subsection}{\numberline {1.7.34}Markov Chain Monte Carlo}{31}{subsection.1.7.34}%
+\contentsline {subsection}{\numberline {1.7.35}Extra reading}{31}{subsection.1.7.35}%
+\contentsline {chapter}{\numberline {2}Content with notebooks}{33}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Markdown + notebooks}{33}{section.2.1}%
+\contentsline {section}{\numberline {2.2}MyST markdown}{33}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Code blocks and outputs}{34}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Notebooks with MyST Markdown}{35}{chapter.3}%
+\contentsline {section}{\numberline {3.1}An example cell}{35}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Create a notebook with MyST Markdown}{35}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Quickly add YAML metadata for MyST Notebooks}{36}{section.3.3}%
+\contentsline {chapter}{Bibliography}{37}{chapter*.20}%
