@@ -1,0 +1,90 @@
+\documentclass{standalone}
+\usepackage{graphicx}	
+\usepackage{amssymb, amsmath}
+\usepackage{color}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections, backgrounds, math}
+\usepackage{pgfmath}
+
+\definecolor{light}{RGB}{254, 245, 144}
+\definecolor{dark}{RGB}{238, 202, 2}
+\definecolor{gray70}{gray}{0.7}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.35, thick]
+
+    \foreach \i in {1, 0.99, ..., 0} {
+            \pgfmathsetmacro{\prop}{100 * exp(-10.0 * \i * \i)};
+            \colorlet{custom}{dark!\prop!white};
+            \draw[line width={30
+                        * \i}, color=custom]
+            (-10, -2) .. controls (-10, 5) and (-9, 10) .. (-4, 10)
+            .. controls (1, 10) and (10, 3) .. (10, -3)
+            .. controls (10, -9) and (3, -2) .. (-1, -2)
+            .. controls (-6, -2) and (-10, -9) .. (-10, -2);
+        }
+
+
+    \draw[dashed, color=gray70] (-12, 4) -- (-12, -6);
+    \draw[dashed, color=gray70] (-10, 10) -- (-10, -6);
+    \draw[dashed, color=gray70] (-8, 10) -- (-8, -6);
+    \draw[dashed, color=gray70] (-12, 4) -- (-8, 4);
+    \draw[dashed, color=gray70] (-12, 2) -- (-8, 2);
+    \draw[dashed, color=gray70] (-12, 0) -- (-8, 0);
+    \draw[dashed, color=gray70] (-12, -2) -- (6, -2);
+    \draw[dashed, color=gray70] (-12, -4) -- (12, -4);
+    \draw[dashed, color=gray70] (-12, -6) -- (-6, -6);
+    \draw[dashed, color=gray70] (-6, -6) -- (-6, -2);
+    \draw[dashed, color=gray70] (-4, -4) -- (-4, 0);
+    \draw[dashed, color=gray70] (-2, -4) -- (-2, 0);
+    \draw[dashed, color=gray70] (-4, 0) -- (2, 0);
+    \draw[dashed, color=gray70] (0, 0) -- (0, -4);
+    \draw[dashed, color=gray70] (2, 0) -- (2, -4);
+    \draw[dashed, color=gray70] (4, -2) -- (4, -6);
+
+    \draw[dashed, color=gray70] (4, -6) -- (12, -6);
+    \draw[dashed, color=gray70] (6, -6) -- (6, -2);
+    \draw[dashed, color=gray70] (8, 6) -- (8, -6);
+    \draw[dashed, color=gray70] (10, 4) -- (10, -6);
+    \draw[dashed, color=gray70] (12, 0) -- (12, -6);
+    \draw[dashed, color=gray70] (12, -2) -- (8, -2);
+    \draw[dashed, color=gray70] (8, 0) -- (12, 0);
+    \draw[dashed, color=gray70] (6, 2) -- (10, 2);
+    \draw[dashed, color=gray70] (4, 4) -- (10, 4);
+    \draw[dashed, color=gray70] (2, 6) -- (8, 6);
+    \draw[dashed, color=gray70] (-10, 8) -- (6, 8);
+    \draw[dashed, color=gray70] (-10, 10) -- (2, 10);
+    \draw[dashed, color=gray70] (-6, 12) -- (0, 12);
+    \draw[dashed, color=gray70] (-6, 12) -- (-6, 8);
+    \draw[dashed, color=gray70] (-4, 12) -- (-4, 8);
+    \draw[dashed, color=gray70] (-2, 12) -- (-2, 8);
+    \draw[dashed, color=gray70] (0, 12) -- (0, 8);
+    \draw[dashed, color=gray70] (2, 10) -- (2, 6);
+    \draw[dashed, color=gray70] (-10, 6) -- (-8, 6);
+    \draw[dashed, color=gray70] (4, 8) -- (4, 4);
+    \draw[dashed, color=gray70] (6, 8) -- (6, 2);
+    \draw[dashed, color=gray70] (-6, 12) -- (-6, 8);
+    \draw[dashed, color=gray70] (-6, 12) -- (-6, 8);
+    \draw[dashed, color=gray70] (-6, 12) -- (-6, 8);
+
+
+
+
+    \draw[dashed, color=gray70] (8, 4) -- (8, -6);
+
+
+
+
+
+    \foreach \x in {-12, -10, ..., 12} {
+            \foreach \y in {-12, -10, ..., 12} {
+                    \fill[color=dark] (\x, \y) circle (5pt);
+                    \fill[color=light] (\x, \y) circle (3pt);
+                }
+        }
+
+\end{tikzpicture}
+
+\end{document}
