@@ -1,0 +1,78 @@
+\documentclass{standalone}
+\usepackage{graphicx}	
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{color}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections, backgrounds}
+
+\input{colors_for_graphs.tex}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.35, thick]
+
+  \pgfmathsetmacro{\dx}{0};
+
+  \begin{scope}
+  \clip (-12 + \dx, -7) rectangle (12 + \dx, 10);
+  \foreach \i in {1, 0.99, ..., 0} {
+    \pgfmathsetmacro{\prop}{100 * exp(-10.0 * \i * \i)};
+    \colorlet{custom}{dark!\prop!white};
+    \draw[line width={30 * \i}, color=custom] 
+      (-10 + \dx, 0) .. controls (-10 + \dx, 15) and (-5 + \dx, 5) .. (0 + \dx, 5)
+      .. controls (5 + \dx, 5) and (10 + \dx, 8) .. (10 + \dx, 0)
+      .. controls (10 + \dx, -8) and (5 + \dx, -3) .. (0 + \dx, -3)
+      .. controls (-5 + \dx, -3) and (-10 + \dx, -5) .. (-10 + \dx, 0);
+  }
+  \end{scope}
+
+  \foreach \i in {0, 0.01,..., 1} {
+    \draw[line width={30 * \i}, opacity={exp(-10 * \i)}, mid, rotate=15] 
+      (0 + \dx, 1) ellipse (10 and 3);
+  }  
+  
+  \pgfmathsetmacro{\dx}{30};
+
+  \begin{scope}
+  \clip (-12 + \dx, -7) rectangle (12 + \dx, 10);
+  \foreach \i in {1, 0.99, ..., 0} {
+    \pgfmathsetmacro{\prop}{100 * exp(-10.0 * \i * \i)};
+    \colorlet{custom}{dark!\prop!white};
+    \draw[line width={30 * \i}, color=custom] 
+      (-10 + \dx, 0) .. controls (-10 + \dx, 15) and (-5 + \dx, 5) .. (0 + \dx, 5)
+      .. controls (5 + \dx, 5) and (10 + \dx, 8) .. (10 + \dx, 0)
+      .. controls (10 + \dx, -8) and (5 + \dx, -3) .. (0 + \dx, -3)
+      .. controls (-5 + \dx, -3) and (-10 + \dx, -5) .. (-10 + \dx, 0);
+  }
+  \end{scope}
+  
+  \foreach \i in {0, 0.01,..., 1} {
+    \draw[line width={30 * \i}, opacity={exp(-10 * \i)}, mid] 
+      (0 + \dx, 1) ellipse (10 and 4);
+  }  
+  
+  \pgfmathsetmacro{\dx}{60};
+
+  \begin{scope}
+  \clip (-12 + \dx, -7) rectangle (12 + \dx, 10);
+  \foreach \i in {1, 0.99, ..., 0} {
+    \pgfmathsetmacro{\prop}{100 * exp(-10.0 * \i * \i)};
+    \colorlet{custom}{dark!\prop!white};
+    \draw[line width={30 * \i}, color=custom] 
+      (-10 + \dx, 0) .. controls (-10 + \dx, 15) and (-5 + \dx, 5) .. (0 + \dx, 5)
+      .. controls (5 + \dx, 5) and (10 + \dx, 8) .. (10 + \dx, 0)
+      .. controls (10 + \dx, -8) and (5 + \dx, -3) .. (0 + \dx, -3)
+      .. controls (-5 + \dx, -3) and (-10 + \dx, -5) .. (-10 + \dx, 0);
+  }
+  \end{scope}
+  
+  \foreach \i in {0, 0.01,..., 1} {
+    \draw[line width={30 * \i}, opacity={exp(-10 * \i)}, mid, rotate=-35] 
+      (1 + \dx - 13, 36) ellipse (11 and 2);
+  }
+  
+\end{tikzpicture}
+
+
+\end{document}  

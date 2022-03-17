@@ -1,9 +1,9 @@
-PWD /Users/jerzybaranowski/GitHub/Private/bayes_book/bayes_book/tikz
+PWD /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/jerzybaranowski/GitHub/Private/bayes_book/bayes_book/tikz/typical_set.tex
-OUTPUT typical_set.log
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/typical_set.tex
+OUTPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/typical_set.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cls
@@ -467,6 +467,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/colors_for_graphs.tex
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/colors_for_graphs.tex
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/colors_for_graphs.tex
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/colors_for_graphs.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -478,10 +482,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./typical_set.aux
-INPUT typical_set.aux
-INPUT typical_set.aux
-OUTPUT typical_set.aux
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/typical_set.aux
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/typical_set.aux
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/typical_set.aux
+OUTPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/typical_set.aux
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -501,5 +505,5 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-OUTPUT typical_set.pdf
-INPUT typical_set.aux
+OUTPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/typical_set.pdf
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/typical_set.aux

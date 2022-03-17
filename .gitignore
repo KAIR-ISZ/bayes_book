@@ -127,4 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#macos
 .DS_Store
+
+#latex temp files
+.aux
+.synctex.gz
+.fdb_latexmk
+.fls

@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage{graphicx}	
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{color}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections, backgrounds}
+
+\input{colors_for_graphs.tex}
+
+
+\newcommand{\dd}{ \mathrm{d} }
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1, thick]
+    \begin{scope}
+
+    \clip (-6, -6) rectangle (6, 6);
+
+  \draw[white, line width=0.3] (-8 , -8) rectangle (8, 8);
+  \foreach \i in {-6, -2, 2, 6} {
+    \draw[gray60, line width=0.3, dash pattern={on 1pt off 1pt}] (\i, -6) -- (\i, 6);
+    \draw[gray60, line width=0.3, dash pattern={on 1pt off 1pt}] (-6, \i) -- (6, \i);
+  }
+  \draw[dark, line width=2] (-2, -2) -- (-2, 2) -- (2, 2) -- (2, -2) -- (-2, -2);
+  
+    \end{scope}
+
+\end{tikzpicture}
+
+\end{document}  

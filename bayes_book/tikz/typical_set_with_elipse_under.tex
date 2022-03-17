@@ -1,0 +1,39 @@
+\documentclass{standalone}
+\usepackage{graphicx}	
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{color}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections, backgrounds}
+
+\input{colors_for_graphs.tex}
+
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.35, thick]
+
+    \begin{scope}
+        \clip (-12, -7) rectangle (12, 11);
+        \foreach \i in {1, 0.99, ..., 0} {
+                \pgfmathsetmacro{\prop}{100 * exp(-10.0 * \i * \i)};
+                \colorlet{custom}{dark!\prop!white};
+                \draw[line width={30
+                            * \i}, color=custom]
+                (-10, -2) .. controls (-10, 5) and (-9, 10) .. (-4, 10)
+                .. controls (1, 10) and (10, 3) .. (10, -3)
+                .. controls (10, -9) and (3, -2) .. (-1, -2)
+                .. controls (-6, -2) and (-10, -9) .. (-10, -2);
+            }
+    \end{scope}
+
+    \foreach \i in {0, 0.01,..., 1} {
+        \draw[line width={30 * \i}, opacity={exp(-10 * \i)}, mid, rotate=0] 
+          (0, 1) ellipse (9 and 4);
+      }  
+
+
+\end{tikzpicture}
+
+
+\end{document}

@@ -1,9 +1,9 @@
-PWD /Users/jerzybaranowski/GitHub/Private/bayes_book/bayes_book/tikz
+PWD /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/jerzybaranowski/GitHub/Private/bayes_book/bayes_book/tikz/2d_grid.tex
-OUTPUT 2d_grid.log
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/2d_grid.tex
+OUTPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/2d_grid.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cls
@@ -461,6 +461,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/colors_for_graphs.tex
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/colors_for_graphs.tex
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/colors_for_graphs.tex
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/colors_for_graphs.tex
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -472,10 +476,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./2d_grid.aux
-INPUT 2d_grid.aux
-INPUT 2d_grid.aux
-OUTPUT 2d_grid.aux
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/2d_grid.aux
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/2d_grid.aux
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/2d_grid.aux
+OUTPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/2d_grid.aux
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -495,5 +499,5 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-OUTPUT 2d_grid.pdf
-INPUT 2d_grid.aux
+OUTPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/2d_grid.pdf
+INPUT /Users/jerzybaranowski/GitHub/KAIR-ISZ/bayes_book/bayes_book/tikz/2d_grid.aux

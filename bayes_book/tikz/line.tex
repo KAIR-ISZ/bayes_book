@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage{graphicx}	
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{color}
+
+\usepackage{tikz}
+\usetikzlibrary{intersections, backgrounds}
+
+\input{colors_for_graphs.tex}
+
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1, thick]
+    \clip (-7, -3) rectangle (7, 3);
+
+ \draw[white] (-8, -8) rectangle (8, 8);
+  \draw[|-|, line width=0.3, dash pattern={on 1pt off 1pt}, gray60] (-6, 0) -- (6, 0);
+  \draw[dark, |-|, line width=2] (-2, 0) -- (2, 0);
+\end{tikzpicture}
+
+\end{document}
