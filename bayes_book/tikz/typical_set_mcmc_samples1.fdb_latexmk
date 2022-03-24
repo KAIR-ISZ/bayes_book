@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1648157405 "/Users/jerzybaranowski/GitHub/Private/bayes_book/bayes_book/tikz/typical_set_funnel_samples2.tex" "typical_set_funnel_samples2.pdf" "typical_set_funnel_samples2" 1648157406
-  "/Users/jerzybaranowski/GitHub/Private/bayes_book/bayes_book/tikz/typical_set_funnel_samples2.tex" 1648155184 1553 7b5e3cfe3ba89a87fd41d14093fd652b ""
-  "/dev/null" 1648157405 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1648157059 "/Users/jerzybaranowski/GitHub/Private/bayes_book/bayes_book/tikz/typical_set_mcmc_samples1.tex" "typical_set_mcmc_samples1.pdf" "typical_set_mcmc_samples1" 1648157060
+  "/Users/jerzybaranowski/GitHub/Private/bayes_book/bayes_book/tikz/typical_set_mcmc_samples1.tex" 1648157042 933 5327c3adb78f5905e502f3fb446030b3 ""
+  "/dev/null" 1648157058 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty" 1572645307 492 1994775aa15b0d1289725a0b1bbc2d4c ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty" 1583617216 6501 4011d89d9621e0b0901138815ba5ff29 ""
@@ -106,11 +106,10 @@
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1642625461 2796600 b57c9ae0d4182ccb1048b0d5d26647c5 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
   "colors_for_graphs.tex" 1648152856 536 8b773a3fd02de82ad65c2db8cb71d23c ""
-  "funnel_samples_1.tex" 1648157405 2333 091519b22c33b6753cb6ec06bb84235d ""
-  "funnel_samples_2.tex" 1648154681 3720 efc5b3302addc920171f78a410dadc27 ""
-  "typical_set_funnel_samples2.aux" 1648157406 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "typical_set_funnel_samples2.tex" 1648155184 1553 7b5e3cfe3ba89a87fd41d14093fd652b ""
+  "ts_mcmc_samples_1.tex" 1648157059 2523 7547be2e372a7197221abacac5260d7b ""
+  "typical_set_mcmc_samples1.aux" 1648157060 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "typical_set_mcmc_samples1.tex" 1648157042 933 5327c3adb78f5905e502f3fb446030b3 ""
   (generated)
-  "typical_set_funnel_samples2.aux"
-  "typical_set_funnel_samples2.log"
-  "typical_set_funnel_samples2.pdf"
+  "typical_set_mcmc_samples1.aux"
+  "typical_set_mcmc_samples1.log"
+  "typical_set_mcmc_samples1.pdf"
